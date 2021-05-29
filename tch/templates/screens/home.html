@@ -1,0 +1,24 @@
+{% extends '../base.html' %}
+
+
+{% block page_title %} HOME | TCH  {% endblock page_title %}
+
+
+    
+    {% block contents %}
+        <h1>Hello I'm Home Screen!</h1>
+
+        
+        {% for c in chipList  %}
+        <ul>
+            <br>
+            <li>{{c.name}}</li>
+            <li>{{c.price}}</li>
+            <li>{{c.company}}</li>
+            <br>
+            <hr>
+        </ul>
+            
+        {% endfor %}
+            
+    {% endblock contents %}
